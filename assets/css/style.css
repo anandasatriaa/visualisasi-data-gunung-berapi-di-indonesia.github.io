@@ -34,7 +34,7 @@ div a {
 }
 
 .grid-gap {
-    grid-gap: 50px;
+    grid-gap: 30px;
 }
 
 .text-decoration {
@@ -45,7 +45,7 @@ div a {
     background-color: #db3737;
     border-radius: 25px;
     padding: 10px 8px 10px 8px;
-    width: 120px;
+    width: 100px;
     color: white;
     margin: auto;
     text-align: center;
