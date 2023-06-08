@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<>
 
     <!-- Header Start -->
     <header>
@@ -20,9 +20,9 @@
                 </div>
                 <div class="flex-nav grid-gap" style="margin-top: 5px;">                              
                     <a href="#beranda" class="text-decoration bg-menu">Beranda</a>                   
-                    <a href="#dashboard" class="text-decoration bg-menu">Dahsboard</a>                   
+                    <a href="#dashboard" class="text-decoration bg-menu">Dashboard</a>                   
                     <a href="#statistik" class="text-decoration bg-menu">Statistik</a>
-                    <a href="" class="text-decoration bg-menu">Lainnya</a>                 
+                    <a href="#lainnya" class="text-decoration bg-menu">Lainnya</a>                 
                     <a href="#pembuat" class="text-decoration bg-menu">Pembuat</a>                                 
                 </div>
             </div>
@@ -38,7 +38,9 @@
             <p class="intro">Visualisasi Data</p>
             <h1 class="judul-h1">Gunung Berapi di Indonesia</h1>
             <p class="penjelasan-article1">Dashboard Visualisasi Data Gunung Berapi di Indonesia 1311-2021</p>
-            <iframe width="1250" height="1000" src="https://lookerstudio.google.com/embed/reporting/15f12446-3680-4cee-9857-b659af71ff17/page/lsgPD" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="iframe-container">
+                <iframe src="https://lookerstudio.google.com/embed/reporting/15f12446-3680-4cee-9857-b659af71ff17/page/lsgPD" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
             <p class="container teks-pengenalan">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum dignissimos ea amet aspernatur perspiciatis distinctio dolore reprehenderit quae tempore! Libero nobis aut quia nostrum. Delectus, voluptatem? Cum sed quam eius, temporibus quod magnam, accusamus, omnis animi quo sunt tempora! <br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia totam enim excepturi labore sapiente molestiae repellendus accusamus quis eaque laudantium magnam autem laborum tempore sint libero omnis, eius, est vitae velit quo corrupti, similique iste? Nobis aperiam qui nisi repellat nesciunt illo deserunt harum! Quia? <br><br>
@@ -53,7 +55,9 @@
         <article style="padding-top: 50px; padding-bottom: 50px;" id="statistik">
             <h2 class="judul-article3">Statistik</h2>
             <p class="penjelasan-article2">Beberapa Statiktik yang telah dikumpulkan seperti berikut ini</p>
-            <iframe width="1250" height="1300" src="https://lookerstudio.google.com/embed/reporting/15f12446-3680-4cee-9857-b659af71ff17/page/p_8oz8denx5c" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="iframe-container2">
+                <iframe src="https://lookerstudio.google.com/embed/reporting/15f12446-3680-4cee-9857-b659af71ff17/page/p_8oz8denx5c" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
             <h2 class="judul-article3">Insight</h2>
             <p class="penjelasan-article2">Penjelasan mengenai visualisasi diatas</p>
             <div class="container flex-content-fakta">
@@ -87,28 +91,32 @@
 
         <hr style="border: 1px solid #db3737">
 
-        <article>
-            <h2 class="judul-article3">Statistik</h2>
-            <p class="penjelasan-article2">Beberapa Statiktik yang telah dikumpulkan seperti berikut ini</p>
-            <iframe width="1250" height="1700" src="https://lookerstudio.google.com/embed/reporting/15f12446-3680-4cee-9857-b659af71ff17/page/p_fuuofq025c" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="lainnya">
+        <article class="tsunami-gempa">
+            <h2 class="judul-article4">Tsunami & Gempa Bumi</h2>
+            <p class="penjelasan-article2">Sebaran Tsunami dan Gempa Bumi yang disebabkan oleh letusan Gunung Berapi</p>
+            <div class="iframe-container3">
+                <iframe src="https://lookerstudio.google.com/embed/reporting/15f12446-3680-4cee-9857-b659af71ff17/page/p_fuuofq025c" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </article>
 
-        <article class="article2 container" id="sejarah">
+        <article class="article2 container2" id="sejarah">
             <img src="assets/img/Tsunami.PNG" alt="" class="border-img">
             <div class="text-article2">
-                <h2 class="judul-article2">Sejarah Bangsa Viking</h2>
-                <p class="teks-sejarah">Sejarah Bangsa Viking dimulai pada awal abad ke-8 Masehi ketika orang-orang Skandinavia, termasuk Norwegia, Swedia, dan Denmark, mulai melakukan penjelajahan dan perdagangan di sepanjang pantai Eropa. Mereka dikenal sebagai pelaut yang terampil dan berani, dan kemampuan mereka dalam pembuatan kapal yang kokoh dan cepat memungkinkan mereka menjelajah ke tempat-tempat yang jauh dan terisolasi.</p>
+                <h2 class="judul-article2">Insight Tsunami</h2>
+                <p class="teks-sejarah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat facilis dolor amet. Hic ducimus non tempora accusantium ut in dicta, est corrupti quam consectetur. Quia porro quod atque at voluptas provident pariatur numquam ut dolore vero? Deserunt nam cupiditate officiis ad? Unde, fugit veritatis! Reprehenderit odit quidem veniam eaque laboriosam.</p>
                 <button id="myBtn" class="button-article2">Baca Selengkapnya...</button>
             </div>
         </article>
-        <article class="article3 container" id="sejarah">
+        <article class="article3 container2" id="sejarah">
             <div class="text-article3">
-                <h2 class="judul-article2">Sejarah Bangsa Viking</h2>
-                <p class="teks-sejarah2">Sejarah Bangsa Viking dimulai pada awal abad ke-8 Masehi ketika orang-orang Skandinavia, termasuk Norwegia, Swedia, dan Denmark, mulai melakukan penjelajahan dan perdagangan di sepanjang pantai Eropa. Mereka dikenal sebagai pelaut yang terampil dan berani, dan kemampuan mereka dalam pembuatan kapal yang kokoh dan cepat memungkinkan mereka menjelajah ke tempat-tempat yang jauh dan terisolasi.</p>
-                <button id="myBtn" class="button-article2">Baca Selengkapnya...</button>
+                <h2 class="judul-article5">Insight Gempa Bumi</h2>
+                <p class="teks-sejarah2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, velit reiciendis! Dignissimos ad mollitia facere sed in omnis voluptatum maiores, tenetur ipsa obcaecati accusantium? Necessitatibus, unde. Cumque neque adipisci id temporibus reiciendis laboriosam consectetur, enim libero dolor doloremque, quaerat voluptas quidem odit doloribus eum error, dignissimos nostrum repellat quod assumenda!</p>
+                <button id="myBtn2" class="button-article2">Baca Selengkapnya...</button>
             </div>
             <img src="assets/img/Gempa_Bumi.PNG" alt="" class="border-img" style="margin-right: 50px;">
         </article>
+        </div>
         <!-- Articel End -->
 
     </main>
@@ -117,14 +125,14 @@
     <hr style="border: 1px solid #db3737">
 
     <!-- Aside Start -->
-    <aside style="margin-bottom: 30px; padding-top: 70px;" id="pembuat">
+    <aside style="margin-bottom: 30px; padding-top: 90px;" id="pembuat">
         <div class="card">
-            <p style="font-weight: 600; margin-bottom: 15px; text-align: center;">Dibuat Oleh:</p>
+            <p class="oleh">Dibuat Oleh:</p>
             <img src="assets/img/satria.png" alt="" class="img-profile">
             <hr>
             <a href="https://anandasatriaa.github.io/" target="_blank"><p class="satria">Ananda Satria Ariyanto</p></a>
             <a href="https://www.gunadarma.ac.id/" target="_blank"><p class="univ-gundar">Universitas Gunadarma</p></a>
-            <p style="font-size: 15px; text-align: center; font-weight: 600; color: #94a3b8; margin-top: -10px;">Sistem Informasi 2020</p>
+            <p class="jurusan">Sistem Informasi 2020</p>
             <div style="display: flex; justify-content: center;">
                 <a href="https://www.instagram.com/anandasatr_3/?hl=id" target="_blank" class="icon"><img src="assets/img/instagram.svg" alt="" width="30"></a>
                 <a href="https://github.com/anandasatriaa" target="_blank" class="icon"><img src="assets/img/github.svg" alt="" width="30"></a>
@@ -136,9 +144,9 @@
     <!-- Aside End -->
 
     <!-- Footer Start -->
-	<footer style="background-color: #0f172a; text-align: center; margin-top: 100px;" id="footer">
+	<footer class="footer" id="footer">
 		<br>
-			<span style="color:#f8fafc;">Copyright ©2023 Design By <span style="color:#6d28d9;">Ananda Satria Ariyanto</span></span>	
+			<span class="footer-desain">Copyright ©2023 Design By <span class="footer-nama">Ananda Satria Ariyanto</span></span>	
 		<br>
 		<br>
 	</footer>
@@ -151,24 +159,46 @@
         <div class="modal-content">
         <div class="modal-header">
             <span class="close">&times;</span>
-            <h2>Sejarah Bangsa Viking</h2>
+            <h2 class="tsunami">Tsunami</h2>
         </div>
         <div class="modal-body">
             <hr>
-            <img src="assets/img/sejarah_viking.jpg" alt="" class="border-img img-center">
-            <p style="text-align: justify;" class="small-text">Sejarah Bangsa Viking dimulai pada awal abad ke-8 Masehi ketika orang-orang Skandinavia, termasuk Norwegia, Swedia, dan Denmark, mulai melakukan penjelajahan dan perdagangan di sepanjang pantai Eropa. Mereka dikenal sebagai pelaut yang terampil dan berani, dan kemampuan mereka dalam pembuatan kapal yang kokoh dan cepat memungkinkan mereka menjelajah ke tempat-tempat yang jauh dan terisolasi. <br><br>
+            <img src="assets/img/Tsunami.PNG" alt="" class="border-img img-center">
+            <p style="text-align: justify;" class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quas quae quasi nesciunt beatae est voluptatibus pariatur, culpa consequatur. Voluptas. <br><br>
 
-                Pada abad ke-9 Masehi, Bangsa Viking mulai melakukan penaklukan di Eropa Barat, dan seringkali menjarah kota-kota dan pemukiman-pemukiman yang lemah. Mereka menaklukkan wilayah Inggris, Prancis, dan Rusia, dan membentuk kerajaan-kerajaan di wilayah Skandinavia. Mereka juga memiliki perdagangan yang kuat dengan wilayah-wilayah lain di Eropa, dan bangsa Viking mengembangkan ekonomi dan kekuasaan yang kuat pada masa itu. <br><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia natus nesciunt sunt blanditiis ipsum modi, impedit nam? Voluptas, ullam impedit. <br><br>
                 
-                Selama periode ini, Bangsa Viking memiliki sistem sosial yang kompleks, dengan pemimpin suku yang kuat dan strata sosial yang jelas. Mereka juga memiliki budaya yang kaya, dengan seni dan mitologi Nordik yang menjadi bagian penting dalam kebudayaan mereka. Bangsa Viking terus melakukan penjelajahan dan penaklukan hingga akhir abad ke-11, ketika agama Kristen menyebar ke wilayah Skandinavia dan membawa perubahan sosial dan budaya yang signifikan. <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos aperiam, nihil vel deleniti qui id totam ut consectetur molestias eveniet. <br><br>
                 
-                Hari ini, warisan Bangsa Viking masih terus dihormati dan dipelajari. Banyak situs arkeologi dan museum di seluruh Skandinavia dan Eropa yang menampilkan artefak dan informasi tentang kehidupan dan budaya mereka. Sejarah Bangsa Viking telah menjadi bagian penting dalam sejarah dunia, dengan penjelajahan dan penaklukan mereka yang luar biasa, serta kontribusi yang signifikan terhadap perdagangan dan budaya di wilayah Eropa.</p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio aliquid ex eligendi eos, quo unde vero sit id quas repellendus.</p>
                 <hr>
         </div>
         </div>
-        <!-- End Modal Content -->
-
     </div>
+
+    <div id="myModal2" class="modal">
+
+        <!-- Modal Content -->
+        <div class="modal-content">
+        <div class="modal-header">
+            <span class="close2">&times;</span>
+            <h2 class="tsunami">Gempa Bumi</h2>
+        </div>
+        <div class="modal-body">
+            <hr>
+            <img src="assets/img/Gempa_Bumi.PNG" alt="" class="border-img img-center">
+            <p style="text-align: justify;" class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quas quae quasi nesciunt beatae est voluptatibus pariatur, culpa consequatur. Voluptas. <br><br>
+        
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia natus nesciunt sunt blanditiis ipsum modi, impedit nam? Voluptas, ullam impedit. <br><br>
+                        
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos aperiam, nihil vel deleniti qui id totam ut consectetur molestias eveniet. <br><br>
+                        
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio aliquid ex eligendi eos, quo unde vero sit id quas repellendus.</p>
+                <hr>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal Content -->
     <!-- End Modal -->
 
     <!-- Back To Top Start -->
