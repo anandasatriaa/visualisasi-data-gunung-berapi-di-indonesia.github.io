@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualisasi Data Gunung Berapi di Indonesia</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<>
-
+<body>
     <!-- Header Start -->
     <header>
         <nav class="fixed1">
@@ -18,13 +17,16 @@
                 <div>
                     <a href="https://anandasatriaa.github.io/" target="_blank" class="text-decoration logo-nama"><p>anandasatria</p></a>
                 </div>
-                <div class="flex-nav grid-gap" style="margin-top: 5px;">                              
-                    <a href="#beranda" class="text-decoration bg-menu">Beranda</a>                   
-                    <a href="#dashboard" class="text-decoration bg-menu">Dashboard</a>                   
-                    <a href="#statistik" class="text-decoration bg-menu">Statistik</a>
-                    <a href="#lainnya" class="text-decoration bg-menu">Lainnya</a>                 
-                    <a href="#pembuat" class="text-decoration bg-menu">Pembuat</a>                                 
+                <div id="myLinks" class="flex-nav grid-gap hamburger-menu" style="margin-top: 20px;">                              
+                    <li><a href="#beranda" class="text-decoration bg-menu">Beranda</a></li>                
+                    <li><a href="#dashboard" class="text-decoration bg-menu">Dashboard</a></li>               
+                    <li><a href="#statistik" class="text-decoration bg-menu">Statistik</a></li>
+                    <li><a href="#lainnya" class="text-decoration bg-menu">Lainnya</a></li>                
+                    <li><a href="#pembuat" class="text-decoration bg-menu">Pembuat</a></li>                               
                 </div>
+                <a href="javascript:void(0);" class="toggle_btn" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
     </nav>
     </header>
@@ -107,12 +109,12 @@
             </div>
         </article>
         <article class="article3 container2" id="sejarah">
-            <div class="text-article3">
-                <h2 class="judul-article5">Insight Gempa Bumi</h2>
-                <p class="teks-sejarah2">Gempa Bumi Vulkanik disebabkan oleh pergerakan magma di dalam gunung berapi yang menciptakan tekanan yang kuat dan dapat merambat ke sekitarnya, menyebabkan gempa bumi lokal.</p>
+            <div class="text-article2">
+                <h2 class="judul-article2">Insight Gempa Bumi</h2>
+                <p class="teks-sejarah">Gempa Bumi Vulkanik disebabkan oleh pergerakan magma di dalam gunung berapi yang menciptakan tekanan yang kuat dan dapat merambat ke sekitarnya, menyebabkan gempa bumi lokal.</p>
                 <button id="myBtn2" class="button-article2">Baca Selengkapnya...</button>
             </div>
-            <img src="assets/img/Gempa_Bumi.PNG" alt="" class="border-img" style="margin-right: 50px;">
+            <img src="assets/img/Gempa_Bumi.PNG" alt="" class="border-img">
         </article>
         </div>
         <!-- Articel End -->
@@ -162,7 +164,7 @@
         <div class="modal-body">
             <hr>
             <img src="assets/img/Tsunami.PNG" alt="" class="border-img img-center">
-            <p style="text-align: justify;" class="small-text">Letusan gunung berapi yang terjadi di bawah laut atau di dekat pantai dapat menyebabkan terjadinya tsunami. Ketika material gunung berapi jatuh ke laut dengan kecepatan tinggi, dapat menciptakan gelombang tsunami yang besar dan merusak. <br><br>
+            <p class="small-text">Letusan gunung berapi yang terjadi di bawah laut atau di dekat pantai dapat menyebabkan terjadinya tsunami. Ketika material gunung berapi jatuh ke laut dengan kecepatan tinggi, dapat menciptakan gelombang tsunami yang besar dan merusak. <br><br>
                 Pada dashboard diatas penyebab tsunami terbesar adalah letusan Gunung Krakatau dan Iliwerung. Dituliskan pada Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG), gelombang tsunami yang ditimbulkan akibat letusan Gunung Krakatau sangat kuat, bahkan bongkahan coral seberat 600 ton terlempar ke darat. Suara letusan terdengar sejauh 4.500 km. Dan waktu tempuh gelombang tsunami ke Surabaya sekitar 11,9 jam dengan tinggi 0,2 meter. <br><br>
                 Selain Gunung Krakatau, terdapat gunung di daerah Nusa Tenggara Timur Bernama Iliwerung yang menyebabkan tsunami hingga menciptakan gelombang setinggi 9 meter yang disebabkan oleh runtuhan tubuh gunung ke laut.
             </p>
@@ -182,7 +184,7 @@
         <div class="modal-body">
             <hr>
             <img src="assets/img/Gempa_Bumi.PNG" alt="" class="border-img img-center">
-            <p style="text-align: justify;" class="small-text">Gempa Bumi Vulkanik disebabkan oleh pergerakan magma di dalam gunung berapi yang menciptakan tekanan yang kuat dan dapat merambat ke sekitarnya, menyebabkan gempa bumi lokal. <br><br>   
+            <p class="small-text">Gempa Bumi Vulkanik disebabkan oleh pergerakan magma di dalam gunung berapi yang menciptakan tekanan yang kuat dan dapat merambat ke sekitarnya, menyebabkan gempa bumi lokal. <br><br>   
                 Pada dashboard, titik gelembung terbesar gunung yang menyebabkan gempa bumi adalah Gunung Ijen, Gunung Ijen terkenal dengan aktivitas vulkaniknya, terutama karena adanya kawah kawah yang menghasilkan belerang dan api biru. <br><br>                       
                 Namun, secara umum, aktivitas gunung seperti Gunung Ijen biasanya tidak menyebabkan gempa bumi yang signifikan. Gempa vulkanik ini biasanya memiliki magnitudo yang relatif kecil dan jangkauan yang terbatas di sekitar area gunung. <br><br>
             </p>
